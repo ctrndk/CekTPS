@@ -45,7 +45,7 @@ else{
   		if($getData['message']==='success'){
         echo "\033[1;36m";
         echo "\n[+]=========================================[+]\n";
-        substr($getData['data']['nik'],0,8)."*****";
+        //substr($getData['data']['nik'],0,8)."*****"; << SENSOR NIK
         echo "    Nama : ".$getData['data']['nama']."\n";
         echo "    L/P  : ".$getData['data']['jenis_kelamin']."\n";
         echo "    TL   : ".$getData['data']['tempat_lahir']."\n";
@@ -61,6 +61,7 @@ else{
         echo '[-] Gagal : '.$getData["data"]["pesan"].'\n'; 
       }
 }
+
 function head(){
 echo "\033[32m
   _____ _  _ ______      _____  _____             
@@ -75,6 +76,8 @@ echo "      Cek TPS Online [PHP-CLI]                 \n";
 echo "      Coded by @ctrndk (github.com/ctrndk)     \n";
 echo "===============================================\n";
 }
+
+
 head();
 echo "    Masukkan Nama : ";
 $nama = trim(fgets(STDIN));
