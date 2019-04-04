@@ -8,7 +8,6 @@ $data = array(
 );
 
 $headers = array();
-// $headers[] = 'Cookie: _ga=GA1.3.1379779202.1552051852';
 $headers[] = 'Origin: https://lindungihakpilihmu.kpu.go.id';
 $headers[] = 'Accept-Encoding: gzip, deflate, br';
 $headers[] = 'Accept-Language: en-US,en;q=0.9';
@@ -62,6 +61,7 @@ else{
         echo '[-] Gagal : '.$getData["data"]["pesan"].'\n'; 
       }
 }
+function head(){
 echo "\033[32m
   _____ _  _ ______      _____  _____             
  / ____| || |____  |___ |  __ \|  __ \            
@@ -74,6 +74,8 @@ echo "\033[1;36m===============================================\n";
 echo "      Cek TPS Online [PHP-CLI]                 \n";
 echo "      Coded by @ctrndk (github.com/ctrndk)     \n";
 echo "===============================================\n";
+}
+head();
 echo "    Masukkan Nama : ";
 $nama = trim(fgets(STDIN));
 echo "    Masukkan NIK  : ";
