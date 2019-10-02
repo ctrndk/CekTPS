@@ -45,7 +45,6 @@ else{
   		if($getData['message']==='success'){
         echo "\033[1;36m";
         echo "\n[+]=========================================[+]\n";
-        //substr($getData['data']['nik'],0,8)."*****"; << SENSOR NIK
         echo "    Nama : ".$getData['data']['nama']."\n";
         echo "    L/P  : ".$getData['data']['jenis_kelamin']."\n";
         echo "    TL   : ".$getData['data']['tempat_lahir']."\n";
